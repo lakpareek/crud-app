@@ -49,7 +49,7 @@ function App() {
     }
 
     try {
-      const response = await fetch(`http://localhost:8080/isLoggedIn`, {
+      const response = await fetch(`https://crud-app-xi-ruby.vercel.app/isLoggedIn`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
