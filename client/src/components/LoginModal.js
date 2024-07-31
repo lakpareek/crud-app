@@ -11,11 +11,11 @@ export default function LoginModal({ setOpenModal, setIsLoggedIn }) {
   async function handleSignIn(event) {
     event.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:8080/login`, {
+      const response = await axios.post(`https://crud-app-xi-ruby.vercel.app/login`, {
         email,
         password,
       });
-      localStorage.setItem("token", response.data.token); // Store token in localStorage
+      localStorage.setItem("token", response.data.token); 
       setIsLoggedIn(true);
       setOpenModal(false);
     } catch (error) {
@@ -26,12 +26,12 @@ export default function LoginModal({ setOpenModal, setIsLoggedIn }) {
   async function handleSignUp(event) {
     event.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:8080/signup`, {
+      const response = await axios.post(`https://crud-app-xi-ruby.vercel.app/signup`, {
         email,
         username,
         password,
       });
-      localStorage.setItem("token", response.data.token); // Store token in localStorage
+      localStorage.setItem("token", response.data.token); 
       setIsLoggedIn(true);
       setOpenModal(false);
       console.log("Signed up successfully:", response.data);
