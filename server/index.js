@@ -8,10 +8,7 @@ const Joi = require("joi");
 const app = express();
 require("dotenv").config();
 
-app.use(cors({
-  origin: 'https://crud-app-q75d-pi09i8btb-lakpareeks-projects.vercel.app/', 
-  credentials: true,
-}));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use((err, req, res, next) => {
