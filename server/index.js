@@ -9,7 +9,7 @@ const app = express();
 require("dotenv").config();
 
 app.use(cors({
-  origin: 'http://localhost:3000', // replace with your client URL
+  origin: 'https://crud-app-q75d-pi09i8btb-lakpareeks-projects.vercel.app/', 
   credentials: true,
 }));
 app.use(bodyParser.json());
