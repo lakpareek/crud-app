@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import config from "../../.config";
 import "../../App.css";
 
 const initialFormState = {
