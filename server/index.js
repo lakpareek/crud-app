@@ -13,6 +13,7 @@ app.use(cors({
   credentials: true,
 }));
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: "An internal server error occurred" });
