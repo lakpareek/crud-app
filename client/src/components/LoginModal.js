@@ -1,6 +1,5 @@
 import "../App.css";
 import React, { useState } from "react";
-import config from "../.config";
 import axios from "axios";
 
 export default function LoginModal({ setOpenModal, setIsLoggedIn }) {
