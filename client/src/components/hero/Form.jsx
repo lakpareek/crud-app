@@ -26,7 +26,7 @@ export default function Form({ isLoggedIn }) {
     }
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:8080/submission`, {
+      const response = await fetch(`https://crud-app-xi-ruby.vercel.app/submission`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
