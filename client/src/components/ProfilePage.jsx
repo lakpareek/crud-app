@@ -16,7 +16,7 @@ export default function ProfilePage() {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:8080/userData`, {
+        const response = await fetch(`https://crud-app-xi-ruby.vercel.app/userData`, {
           
           method: "GET",
           headers: {
